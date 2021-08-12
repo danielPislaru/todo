@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     top: "50%",
     left: "50%",
     width: "60%",
-    height: "calc(100vh - 200px)",
+    height: "calc(100vh - 80px)",
     padding: "10px 15px",
     transform: "translate(-50%,-50%)",
     background: theme.palette.primary.main,
@@ -59,7 +59,7 @@ const App = () => {
     loadTasksFromLocalStorage();
   }, []);
 
-  
+
   useEffect(() => {
     filterHandler();
     saveTasksToLocalStorage();
